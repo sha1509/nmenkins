@@ -29,7 +29,7 @@ spec:
   serviceAccountName: jenkins
   containers:
       - name: nginx
-        image: nginx:1.14.2
+        image: nginx
         ports:
         - containerPort: 80
 """
