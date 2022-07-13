@@ -21,7 +21,7 @@ def buildAgentName(String jobName, String buildNumber) {
 def buildLabel = buildAgentName(env.JOB_NAME, env.BUILD_NUMBER);
 def workingDir = "/var/jenkins/agent"
 podTemplate(
-   label: buildLabel
+   label: buildLabel,
    yaml: """
 apiVersion: v1
 kind: Pod
